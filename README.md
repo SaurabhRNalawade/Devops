@@ -42,6 +42,8 @@ Git, Mercurial, Bazaar.
 
 -To initialize empty git repository
 
-````git init````
+````
+git init
+````
 
 
