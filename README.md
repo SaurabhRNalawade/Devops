@@ -109,7 +109,7 @@ git clone git@github.com:abhipraydhoble/gitdayone.git
 ![image](https://github.com/user-attachments/assets/c3b36324-9def-462f-af4e-6162586b3cf9)
 
 - check current branch
-  ````
+````
 git branch
 ````
 - create new branch
