@@ -1,6 +1,6 @@
 # Git Notes
 
-## Que. Differnence between CVCS and DVCS
+## Que. Difference between CVCS and DVCS
 
 ### Centralized Version Control System (CVCS)
  #### Architecture:
