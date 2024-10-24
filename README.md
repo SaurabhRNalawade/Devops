@@ -40,10 +40,36 @@ Git, Mercurial, Bazaar.
 
 ## Git Basic Commands
 
--To initialize empty git repository
-
+ - To initialize empty git repository
 ````
 git init
 ````
+- Congfigure Username and EmailID
+````
+git config --global user.email "testemail@gmail.com"
+git config --global user.name "abhi"
+git config --global --list
+````
+- create test file
+````
+touch index.html
+````
+- Add newly created file to staging area
+````
+git add index.html
+````
+- Verify file added to staging area or not
+````
+git status
+````
+- Commit file to local repository
+````
+git commit -m "message"
+````
+- verify commmit
+````
+git log
+````
+
 
 
