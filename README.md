@@ -2,7 +2,7 @@
 
 ## Que. Difference between CVCS and DVCS
 
-**Centralized Version Control System (CVCS)**
+### Centralized Version Control System (CVCS)
  #### Architecture:
 Uses a central server that contains the complete repository.
 Developers check out files from this central repository to work on.
@@ -33,3 +33,8 @@ Full functionality offline; developers can commit changes, create branches, and 
 Each local repository contains its own history, reducing the risk of losing data.
 Examples:
 Git, Mercurial, Bazaar.
+
+## Git Working
+
+![image](https://github.com/user-attachments/assets/ffddb828-91cc-4066-8ea7-026e21d1c09f)
+
