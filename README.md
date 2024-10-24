@@ -40,6 +40,6 @@ Git, Mercurial, Bazaar.
 
 ## Git Basic Commands
 
--To initialize empty git repository
+```To initialize empty git repository```
 
 
