@@ -3,33 +3,33 @@
 ## Que. Difference between CVCS and DVCS
 
 ### Centralized Version Control System (CVCS)
- #### Architecture:
+ #### - Architecture:
 Uses a central server that contains the complete repository.
 Developers check out files from this central repository to work on.
 
-#### Collaboration:
+#### - Collaboration:
 Changes are made to the central repository, which can lead to conflicts if multiple users attempt to modify the same files simultaneously.
 
-#### Offline Work:
+#### - Offline Work:
 Limited; developers need to be connected to the central server to commit changes or access the latest version.
 
-#### History and Versioning:
+#### - History and Versioning:
 Version history is stored centrally, which can be a single point of failure.
 Examples:
 Subversion (SVN), CVS.
 
 ### Distributed Version Control System (DVCS)
 
-#### Architecture:
+#### - Architecture:
 Every developer has a complete copy of the entire repository, including its history, on their local machine.
 
-#### Collaboration:
+#### - Collaboration:
 Supports branching and merging easily, allowing developers to work independently before integrating their changes.
 
-#### Offline Work:
+#### - Offline Work:
 Full functionality offline; developers can commit changes, create branches, and view history without needing a network connection.
 
-#### History and Versioning:
+#### - History and Versioning:
 Each local repository contains its own history, reducing the risk of losing data.
 Examples:
 Git, Mercurial, Bazaar.
