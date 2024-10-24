@@ -78,8 +78,8 @@ git remote add origin https://github.com/abhipraydhoble/Devops-B-fourtyone.git
 ````
 git remote -v
 ````
-Note: Make sure to generate github token before pushing to remote
-go to github profile ->settings->developer setting->personal access token-> token classic->generate new
+- Note: Make sure to generate github token before pushing to remote
+- go to github profile ->settings->developer setting->personal access token-> token classic->generate new
 
 
 
