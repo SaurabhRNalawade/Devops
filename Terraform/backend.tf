@@ -2,7 +2,8 @@
 terraform {
   backend "s3" {
   bucket="s3-remote-backend"
-#filename--> key="terraform.tfstate"
+#filename
+  key="terraform.tfstate"
   region="ap-south-1"
   profile="saurabh"
 
