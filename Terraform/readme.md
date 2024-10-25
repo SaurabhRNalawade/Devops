@@ -1,3 +1,5 @@
+## What is Terraform?
+Terraform is an open-source infrastructure as code (IaC) tool developed by HashiCorp. It allows users to define and provision data center infrastructure using a high-level configuration language called HashiCorp Configuration Language (HCL) or JSON. With Terraform, you can automate the setup, scaling, and management of cloud resources across various providers like AWS, Azure, Google Cloud, and more.
 ## AWS CLI Installation:
 ````
 sudo apt install unzip -y
