@@ -46,3 +46,6 @@ ansible all -m ping
      enabled: true
 ```
 ### Run playbook
+```
+ansible-playbook nginx.yaml
+```
