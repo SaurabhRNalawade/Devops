@@ -10,8 +10,8 @@ sudo yum install ansible
 ```
 ansible --version
 ```
-### create a key-pair using ssh-keygen command
-### copy public-key form master authorized_keys file in node .ssh dir
+#### create a key-pair using ssh-keygen command
+#### copy public-key form master authorized_keys file in node .ssh dir
 
 ### setup inventory file
 ```
