@@ -1,4 +1,4 @@
-# ${\color {blue} \textbf {Ansible}}$
+### ${\color {blue} \textbf {Ansible}}$
 ### What is Ansible?
 Ansible is an open-source automation tool primarily used for configuration management, application deployment, task automation, and multi-node orchestration. It simplifies the process of automating IT tasks by defining them in simple, human-readable YAML (YAML Ain't Markup Language) files called playbooks.
 
@@ -52,7 +52,7 @@ ansible all -m ping
 ansible-playbook nginx.yaml
 ```
 
-# ${\color {orange} \textbf {Installation Steps For Ubuntu...}}$
+### ${\color {orange} \textbf {Installation Steps For Ubuntu...}}$
 #### Installation
 ```
 sudo apt-add-repository ppa:ansible/ansible
