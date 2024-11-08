@@ -15,12 +15,12 @@ ansible --version
 #### create a key-pair using ssh-keygen command
 #### copy public-key form master authorized_keys file in node .ssh dir
 
-### setup inventory file
+### Setup Inventory File
 ```
 sudo nano /etc/ansible/hosts
 private-ip of node
 ```
-### ping all nodes to test connection
+### Ping All Nodes To Test Connection
 ```
 ansible all -m ping
 ```
