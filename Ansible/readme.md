@@ -1,8 +1,8 @@
-### ${\color {blue} \textbf {Ansible}}$
+## ${\color {blue} \textbf {Ansible}}$
 ### What is Ansible?
 Ansible is an open-source automation tool primarily used for configuration management, application deployment, task automation, and multi-node orchestration. It simplifies the process of automating IT tasks by defining them in simple, human-readable YAML (YAML Ain't Markup Language) files called playbooks.
 
-# ${\color {orange} \textbf {Installation Steps For Amazon Linux...}}$
+### ${\color {orange} \textbf {Installation Steps For Amazon Linux...}}$
 ```
 sudo yum update
 ```
