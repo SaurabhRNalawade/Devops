@@ -1,24 +1,31 @@
-# Git Notes
+# ${\color {blue} \textbf {Git}}$
+
 ## What is Git?
 Git is a distributed version control system that enables multiple developers to collaborate on projects efficiently.
+
 ## Key Features:
 #### 1.Distributed Architecture:
 
 - Every user has a full copy of the repository, including its entire history, on their local machine. This allows for offline work and makes collaboration easier.
   
 #### 2.Branching and Merging:
+
 - Git allows users to create branches to develop features or fix bugs independently. Merging these branches back into the main codebase is straightforward and efficient.
 
 #### 3.Performance:
+
 - Git is designed to handle large projects efficiently. Operations like commits, diffs, and merges are optimized for speed.
 
 #### 4.Data Integrity:
+
 - Git uses a SHA-1 hashing algorithm to ensure the integrity of data. Every change is tracked, and the history is maintained in a way that prevents data corruption.
 
 #### 5.Staging Area:
+
 - Git features a staging area where changes can be prepared before they are committed to the repository. This allows for more control over what gets included in a commit.
 
 #### 6.Collaboration:
+
 - Git supports workflows that enable multiple developers to work on the same project simultaneously. Changes can be shared via remote repositories, often hosted on platforms like GitHub, GitLab, or Bitbucket.
 
 ## Que. Difference between CVCS and DVCS
