@@ -1,9 +1,9 @@
 # ${\color {blue} \textbf {Git}}$
 
-## What is Git?
+### What is Git?
 Git is a distributed version control system that enables multiple developers to collaborate on projects efficiently.
 
-## Key Features:
+### Key Features:
 
 #### 1.Distributed Architecture:
 
@@ -29,16 +29,16 @@ Git is a distributed version control system that enables multiple developers to 
 
 - Git supports workflows that enable multiple developers to work on the same project simultaneously. Changes can be shared via remote repositories, often hosted on platforms like GitHub, GitLab, or Bitbucket.
 
-## Difference between CVCS and DVCS?
+### Difference between CVCS and DVCS?
 
 ![image](https://github.com/user-attachments/assets/feaa2394-384a-439e-a0e4-2c9421c1c73e)
 
 
-## Git Working
+### Git Working
 
 ![image](https://github.com/user-attachments/assets/ffddb828-91cc-4066-8ea7-026e21d1c09f)
 
-## Git Basic Commands
+### Git Basic Commands
 
  - To initialize empty git repository
 ````
@@ -129,6 +129,7 @@ git push origin feature
 git checkout -b test
 ````
 ### Difference between git merge & git rebase?
+
 ![image](https://github.com/user-attachments/assets/7f770649-1a8b-4306-af4e-be0ef68ac9ea)
 
 - Merge test branch into main branch
@@ -147,6 +148,10 @@ git checkout <branchname>
 git cherry-pick <commmit-id>
 ````
 - Pull: merge remote changes to local repo
+### Difference between git pull & git fetch?
+
+![image](https://github.com/user-attachments/assets/35db811d-fbcc-4044-81aa-8f6091e0c976)
+
 ````
 git pull https://github.com/abhipraydhoble/devops-b41.git
 ````
