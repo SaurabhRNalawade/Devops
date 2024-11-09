@@ -128,6 +128,9 @@ git push origin feature
 ````
 git checkout -b test
 ````
+### Difference between git merge & git rebase?
+![image](https://github.com/user-attachments/assets/7f770649-1a8b-4306-af4e-be0ef68ac9ea)
+
 - Merge test branch into main branch
 ````
 git checkout main
