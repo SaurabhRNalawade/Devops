@@ -4,6 +4,7 @@
 Git is a distributed version control system that enables multiple developers to collaborate on projects efficiently.
 
 ## Key Features:
+
 #### 1.Distributed Architecture:
 
 - Every user has a full copy of the repository, including its entire history, on their local machine. This allows for offline work and makes collaboration easier.
@@ -28,39 +29,9 @@ Git is a distributed version control system that enables multiple developers to 
 
 - Git supports workflows that enable multiple developers to work on the same project simultaneously. Changes can be shared via remote repositories, often hosted on platforms like GitHub, GitLab, or Bitbucket.
 
-## Que. Difference between CVCS and DVCS
+## Difference between CVCS and DVCS?
 
-### Centralized Version Control System (CVCS)
- #### - Architecture:
-Uses a central server that contains the complete repository.
-Developers check out files from this central repository to work on.
-
-#### - Collaboration:
-Changes are made to the central repository, which can lead to conflicts if multiple users attempt to modify the same files simultaneously.
-
-#### - Offline Work:
-Limited; developers need to be connected to the central server to commit changes or access the latest version.
-
-#### - History and Versioning:
-Version history is stored centrally, which can be a single point of failure.
-Examples:
-Subversion (SVN), CVS.
-
-### Distributed Version Control System (DVCS)
-
-#### - Architecture:
-Every developer has a complete copy of the entire repository, including its history, on their local machine.
-
-#### - Collaboration:
-Supports branching and merging easily, allowing developers to work independently before integrating their changes.
-
-#### - Offline Work:
-Full functionality offline; developers can commit changes, create branches, and view history without needing a network connection.
-
-#### - History and Versioning:
-Each local repository contains its own history, reducing the risk of losing data.
-Examples:
-Git, Mercurial, Bazaar.
+![image](https://github.com/user-attachments/assets/feaa2394-384a-439e-a0e4-2c9421c1c73e)
 
 ## Git Working
 
