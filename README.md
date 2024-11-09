@@ -128,7 +128,7 @@ git push origin feature
 ````
 git checkout -b test
 ````
-### ${\color {orange} \textbf {Difference between git merge & git rebase?}}$
+### ${\color {orange} \textbf {Difference between git merge and git rebase?}}$
 
 ![image](https://github.com/user-attachments/assets/7f770649-1a8b-4306-af4e-be0ef68ac9ea)
 
@@ -148,7 +148,7 @@ git checkout <branchname>
 git cherry-pick <commmit-id>
 ````
 - Pull: merge remote changes to local repo
-### ${\color {orange} \textbf {Difference between git pull & git fetch?}}$
+### ${\color {orange} \textbf {Difference between git pull and git fetch?}}$
 
 ![image](https://github.com/user-attachments/assets/35db811d-fbcc-4044-81aa-8f6091e0c976)
 
