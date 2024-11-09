@@ -1,9 +1,10 @@
 # ${\color {blue} \textbf {Ansible}}$
-### Difference Between Terraform & Ansible?
-![image](https://github.com/user-attachments/assets/decb5633-d9c0-482f-ba0a-323a3e45cfdf)
 
 ### What is Ansible?
 Ansible is an open-source automation tool primarily used for configuration management, application deployment, task automation, and multi-node orchestration. It simplifies the process of automating IT tasks by defining them in simple, human-readable YAML (YAML Ain't Markup Language) files called playbooks.
+
+### Difference Between Terraform & Ansible?
+![image](https://github.com/user-attachments/assets/decb5633-d9c0-482f-ba0a-323a3e45cfdf)
 
 ### ${\color {orange} \textbf {Installation Steps For Amazon Linux...}}$
 ```
