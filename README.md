@@ -3,7 +3,7 @@
 ### ${\color {orange} \textbf {What is Git?}}$
 Git is a distributed version control system that enables multiple developers to collaborate on projects efficiently.
 
-### Key Features:
+### ${\color {orange} \textbf {Key Features:}}$
 
 #### 1.Distributed Architecture:
 
@@ -29,16 +29,16 @@ Git is a distributed version control system that enables multiple developers to 
 
 - Git supports workflows that enable multiple developers to work on the same project simultaneously. Changes can be shared via remote repositories, often hosted on platforms like GitHub, GitLab, or Bitbucket.
 
-### Difference between CVCS and DVCS?
+### ${\color {orange} \textbf {Difference between CVCS and DVCS?}}$
 
 ![image](https://github.com/user-attachments/assets/feaa2394-384a-439e-a0e4-2c9421c1c73e)
 
 
-### Git Working
+### ${\color {orange} \textbf {Git Working}}$
 
 ![image](https://github.com/user-attachments/assets/ffddb828-91cc-4066-8ea7-026e21d1c09f)
 
-### Git Basic Commands
+### ${\color {orange} \textbf {Git Basic Commands:}}$
 
  - To initialize empty git repository
 ````
@@ -91,7 +91,7 @@ git push origin master
 ````
 - it will ask for username and token
 
-### Git Clone Using HTTPs and SSH Method:
+### ${\color {orange} \textbf {Git Clone Using HTTPs and SSH Method:}}$
 #### 1. HTTPS:
 ````
 git clone https://github.com/abhipraydhoble/gitdayone.git
@@ -104,7 +104,7 @@ git clone git@github.com:abhipraydhoble/gitdayone.git
 ````
 ![image](https://github.com/user-attachments/assets/1a92c161-d9ad-43fb-a5e0-4274f46b6afd)
 
-### Branching Strategy:
+### ${\color {orange} \textbf {Branching Strategy:}}$
 
 ![image](https://github.com/user-attachments/assets/c3b36324-9def-462f-af4e-6162586b3cf9)
 
@@ -128,7 +128,7 @@ git push origin feature
 ````
 git checkout -b test
 ````
-### Difference between git merge & git rebase?
+### ${\color {orange} \textbf {Difference between git merge & git rebase?}}$
 
 ![image](https://github.com/user-attachments/assets/7f770649-1a8b-4306-af4e-be0ef68ac9ea)
 
@@ -148,7 +148,7 @@ git checkout <branchname>
 git cherry-pick <commmit-id>
 ````
 - Pull: merge remote changes to local repo
-### Difference between git pull & git fetch?
+### ${\color {orange} \textbf {Difference between git pull & git fetch?}}$
 
 ![image](https://github.com/user-attachments/assets/35db811d-fbcc-4044-81aa-8f6091e0c976)
 
