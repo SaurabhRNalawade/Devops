@@ -1,6 +1,6 @@
 # ${\color {blue} \textbf {Git}}$
 
-### What is Git?
+### ${\color {orange} \textbf {What is Git?}}$
 Git is a distributed version control system that enables multiple developers to collaborate on projects efficiently.
 
 ### Key Features:
