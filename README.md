@@ -147,11 +147,11 @@ git log --oneline    #copy commmit id
 git checkout <branchname>
 git cherry-pick <commmit-id>
 ````
-- Pull: merge remote changes to local repo
 ### ${\color {orange} \textbf {Difference between git pull and git fetch?}}$
 
 ![image](https://github.com/user-attachments/assets/35db811d-fbcc-4044-81aa-8f6091e0c976)
 
+- Pull: merge remote changes to local repo
 ````
 git pull https://github.com/abhipraydhoble/devops-b41.git
 ````
