@@ -12,4 +12,6 @@ Docker is an open platform for developing, shipping, and running applications. D
 - A Docker registry stores Docker images. Docker Hub is a public registry that anyone can use, and Docker looks for images on Docker Hub by default. You can even run your own private registry.
 
 - When you use the docker pull or docker run commands, Docker pulls the required images from your configured registry. When you use the docker push command, Docker pushes your image to your configured registry.
+### Difference Between virtual machine and Containers
+![image](https://github.com/user-attachments/assets/1d92c895-a67b-43ac-8f00-787f980cb5c6)
 
