@@ -1,4 +1,7 @@
 ### What is Docker?
-Docker is an open-source platform used for automating the deployment, scaling, and management of applications in lightweight, portable containers. Containers allow applications and their dependencies to be packaged together into a single unit that can be run consistently across different environments (such as development, testing, and production).
+Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly. With Docker, you can manage your infrastructure in the same ways you manage your applications. By taking advantage of Docker's methodologies for shipping, testing, and deploying code, you can significantly reduce the delay between writing code and running it in production.
+### Architecture of Docker:
+![image](https://github.com/user-attachments/assets/4fa4f548-6a3e-441a-b19c-2e4f133bfdec)
 
-### Architecture of Docker
+
+
