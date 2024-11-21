@@ -60,7 +60,7 @@ Worker nodes are the machines that run containerized applications, and they cont
    - Manages load balancing for services and handles traffic routing for pod-to-pod communication.
    - Implements network rules (for example, handling IP tables) to enable services and pods to communicate within the cluster.
    - Ensures that requests are directed to the correct container, even as pods are created and destroyed dynamically.
-#### 3. Container Runtime
+### 3. Container Runtime
 - #### Function:
    -  The container runtime is the software responsible for running containers on the worker node. Kubernetes supports different container runtimes like Docker, containerd, and CRI-O.
 - #### Role:
@@ -68,25 +68,25 @@ Worker nodes are the machines that run containerized applications, and they cont
    - Runs containers as defined in the pod specification.
    - Manages the lifecycle of containers (start, stop, and monitor).
 ## 2. Pods and Other Objects in Kubernetes
-#### 1. Pods
+### 1. Pods
 - #### Function:
    - A Pod is the smallest deployable unit in Kubernetes. It is a logical host for one or more containers that share network resources, such as IP addresses and storage volumes.
 - #### Role:
    - Pods can host one or more containers that are tightly coupled and share resources.
    - Each pod has a unique IP address within the cluster and provides a single point of access for containers running within it.
-#### 2. Deployments
+### 2. Deployments
 - #### Function:
    - A Deployment is a higher-level abstraction for managing the deployment and scaling of applications in Kubernetes.
 - #### Role:
    - It ensures that the desired number of pod replicas are running.
    - Handles rolling updates and rollbacks to manage application updates without downtime.
-#### 3. Services
+### 3. Services
 - #### Function:
    - A Service in Kubernetes is an abstraction that defines a logical set of pods and a policy to access them. It provides load balancing and a stable IP address for accessing a group of pods.
 - #### Role:
    - Ensures that traffic is properly routed to the correct set of pods.
    - Provides a stable endpoint (DNS name) for accessing a set of pods, even as the pods are created or destroyed.
-#### 4. ConfigMaps and Secrets
+### 4. ConfigMaps and Secrets
 - #### Function:
    -  ConfigMaps and Secrets are used to store configuration data and sensitive information (e.g., passwords or tokens), respectively.
 - #### Role:
