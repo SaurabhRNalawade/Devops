@@ -17,19 +17,19 @@ The Control Plane is responsible for managing the Kubernetes cluster, making dec
 
 ### 1. API Server (kube-apiserver)
 - #### Function:
-- The API server is the entry point for all interactions with the Kubernetes cluster. It exposes the Kubernetes API, which provides the interface for users and components to query and modify the state of the cluster.
+   - The API server is the entry point for all interactions with the Kubernetes cluster. It exposes the Kubernetes API, which provides the interface for users and components to query and modify the state of the cluster.
 - #### Role:
-- It handles REST requests from users, controllers, or external clients.
-- Acts as the communication hub between the different components of Kubernetes.
+   - It handles REST requests from users, controllers, or external clients.
+   - Acts as the communication hub between the different components of Kubernetes.
 ### 2. Scheduler (kube-scheduler)
 - #### Function:
--  The scheduler is responsible for selecting which worker node (or machine) a newly created pod should run on, based on resource requirements, policies, and constraints.
+   -  The scheduler is responsible for selecting which worker node (or machine) a newly created pod should run on, based on resource requirements, policies, and constraints.
 - #### Role:
    - It schedules pods onto worker nodes that have enough resources (CPU, memory, storage).
    - It takes into account constraints like node affinity, taints, tolerations, and available resources when deciding on pod placement.
 ### 3. Controller Manager (kube-controller-manager)
 - #### Function:
-- The controller manager runs controllers that regulate the state of the cluster. Each controller watches the cluster state and takes action to bring the actual state in line with the desired state.
+   - The controller manager runs controllers that regulate the state of the cluster. Each controller watches the cluster state and takes action to bring the actual state in line with the desired state.
 - #### Role:
    - Replication Controller: Ensures the desired number of pod replicas are running.
    - Deployment Controller: Manages application deployments, including rolling updates.
