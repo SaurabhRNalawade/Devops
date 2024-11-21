@@ -17,7 +17,7 @@ The Control Plane is responsible for managing the Kubernetes cluster, making dec
 
 #### 1. API Server (kube-apiserver)
 - Function: The API server is the entry point for all interactions with the Kubernetes cluster. It exposes the Kubernetes API, which provides the interface for users and components to query and modify the state of the cluster.
-- Role:
+- ### Role:
 - It handles REST requests from users, controllers, or external clients.
 - Acts as the communication hub between the different components of Kubernetes.
 #### 2. Scheduler (kube-scheduler)
