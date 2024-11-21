@@ -33,12 +33,9 @@ The Control Plane is responsible for managing the Kubernetes cluster, making dec
 - #### Role:
    - Replication Controller: Ensures the desired number of pod replicas are running.
    - Deployment Controller: Manages application deployments, including rolling updates.
-- #### Node Controller:
-   -  Manages the state of nodes.
-- #### EndPoint Controller:
-   -  Maintains endpoints for services.
-- #### StatefulSet Controller:
-   -  Manages the deployment and scaling of stateful applications.
+   - Node Controller: Manages the state of nodes.
+   - EndPoint Controller: Maintains endpoints for services.
+   - StatefulSet Controller: Manages the deployment and scaling of stateful applications.
 ### 4. etcd
 - #### Function:
    -  etcd is a distributed key-value store used to store the configuration data and state of the cluster.
