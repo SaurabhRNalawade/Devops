@@ -1,4 +1,4 @@
-## Kubernetes
+# Kubernetes
 ### What is Kubernetes?
 Kubernetes (often abbreviated as K8s) is an open-source platform designed to automate the deployment, scaling, management, and operation of containerized applications. It is a container orchestration tool that helps developers and IT teams efficiently manage the lifecycle of containers, which are lightweight, portable units of software that package applications and their dependencies.
 ### Difference between k8s and docker?
@@ -6,7 +6,7 @@ Kubernetes (often abbreviated as K8s) is an open-source platform designed to aut
 
 ### Cluster Architecture
 ![image](https://github.com/user-attachments/assets/b0b87441-b860-4523-a0b0-ba536f875541)
-### 1. Kubernetes Cluster Components
+## 1. Kubernetes Cluster Components
 A Kubernetes cluster is made up of two main types of components:
 
 - Control Plane (also called the Master Node): Responsible for managing the cluster and making global decisions about the cluster (e.g., scheduling, scaling).
@@ -60,7 +60,7 @@ Role:
 Pulls container images from container registries (e.g., Docker Hub).
 Runs containers as defined in the pod specification.
 Manages the lifecycle of containers (start, stop, and monitor).
-### 2. Pods and Other Objects in Kubernetes
+## 2. Pods and Other Objects in Kubernetes
 #### 1. Pods
 Function: A Pod is the smallest deployable unit in Kubernetes. It is a logical host for one or more containers that share network resources, such as IP addresses and storage volumes.
 Role:
