@@ -67,29 +67,21 @@ Worker nodes are the machines that run containerized applications, and they cont
    - Pulls container images from container registries (e.g., Docker Hub).
    - Runs containers as defined in the pod specification.
    - Manages the lifecycle of containers (start, stop, and monitor).
-## 2. Pods and Other Objects in Kubernetes
-### 1. Pods
-- #### Function:
-   - A Pod is the smallest deployable unit in Kubernetes. It is a logical host for one or more containers that share network resources, such as IP addresses and storage volumes.
-- #### Role:
-   - Pods can host one or more containers that are tightly coupled and share resources.
-   - Each pod has a unique IP address within the cluster and provides a single point of access for containers running within it.
-### 2. Deployments
-- #### Function:
-   - A Deployment is a higher-level abstraction for managing the deployment and scaling of applications in Kubernetes.
-- #### Role:
-   - It ensures that the desired number of pod replicas are running.
-   - Handles rolling updates and rollbacks to manage application updates without downtime.
-### 3. Services
-- #### Function:
-   - A Service in Kubernetes is an abstraction that defines a logical set of pods and a policy to access them. It provides load balancing and a stable IP address for accessing a group of pods.
-- #### Role:
-   - Ensures that traffic is properly routed to the correct set of pods.
-   - Provides a stable endpoint (DNS name) for accessing a set of pods, even as the pods are created or destroyed.
-### 4. ConfigMaps and Secrets
-- #### Function:
-   -  ConfigMaps and Secrets are used to store configuration data and sensitive information (e.g., passwords or tokens), respectively.
-- #### Role:
-   - ConfigMaps allow applications to dynamically access configuration data from the environment.
-   - Secrets store sensitive information securely and are encrypted at rest.
+###  Kubernetes Objects
+Kubernetes organizes the workloads in the cluster using objects. Objects represent the desired state of the system. Some important Kubernetes objects are:
 
+- #### Pod:
+   - A Pod is the smallest and simplest unit in Kubernetes. It is a group of one or more containers that share the same network IP, storage, and namespace. Pods are used to run containers within a Kubernetes cluster.
+- #### Service:
+   - A Service is a stable, abstract way to expose a set of pods to network traffic. It provides load balancing and service discovery for pods.
+- #### Deployment:
+   - A Deployment manages the lifecycle of pods, ensuring that the correct number of pod replicas are running. It supports features like rolling updates, scaling, and version rollbacks.
+- #### ReplicaSet:
+   - A ReplicaSet ensures that a specified number of pod replicas are running at any given time. It’s often managed by a Deployment.
+- #### StatefulSet:
+   - A StatefulSet is used for managing stateful applications (like databases) that require stable, persistent storage and unique network identifiers.
+- #### ConfigMap and Secret:
+   - ConfigMaps allow you to store configuration data as key-value pairs that can be consumed by applications running in Kubernetes.
+   - Secrets are similar to ConfigMaps, but they are designed for sensitive data (e.g., passwords, tokens).
+- #### Namespace:
+   - Namespaces are a way to partition resources in a Kubernetes cluster. They provide a scope for names and allow multiple users or teams to share a cluster while maintaining isolation.
