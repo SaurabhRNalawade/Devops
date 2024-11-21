@@ -1,4 +1,4 @@
-# Kubernetes
+# ${\color {blue} \textbf {Kubernetes}}$
 ### What is Kubernetes?
 Kubernetes (often abbreviated as K8s) is an open-source platform designed to automate the deployment, scaling, management, and operation of containerized applications. It is a container orchestration tool that helps developers and IT teams efficiently manage the lifecycle of containers, which are lightweight, portable units of software that package applications and their dependencies.
 ### Difference between k8s and docker?
