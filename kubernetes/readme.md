@@ -67,9 +67,9 @@ Worker nodes are the machines that run containerized applications, and they cont
    - Pulls container images from container registries (e.g., Docker Hub).
    - Runs containers as defined in the pod specification.
    - Manages the lifecycle of containers (start, stop, and monitor).
-###  Kubernetes Objects
-Kubernetes organizes the workloads in the cluster using objects. Objects represent the desired state of the system. Some important Kubernetes objects are:
 
+# ${\color {blue} \textbf {Kubernetes objets}}$
+Kubernetes organizes the workloads in the cluster using objects. Objects represent the desired state of the system. Some important Kubernetes objects are:
 - #### Pod:
    - A Pod is the smallest and simplest unit in Kubernetes. It is a group of one or more containers that share the same network IP, storage, and namespace. Pods are used to run containers within a Kubernetes cluster.
 - #### Service:
@@ -86,7 +86,7 @@ Kubernetes organizes the workloads in the cluster using objects. Objects represe
 - #### Namespace:
    - Namespaces are a way to partition resources in a Kubernetes cluster. They provide a scope for names and allow multiple users or teams to share a cluster while maintaining isolation.
 
-## Services of Kubernetes
+# ${\color {blue} \textbf {Services of Kubernetes}}$
 
 **1.ClusterIP (Default)**
 - Purpose: Exposes the service on a cluster-internal IP. Only accessible from within the cluster.
