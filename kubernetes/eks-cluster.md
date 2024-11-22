@@ -2,15 +2,15 @@
 #### launch one instance t2.medium
 #### 1:Install eksctl CLI tool for creating EKS Clusters on AWS
 
-download eksctl CLI tool for creating EKS Clusters on AWS
+- download eksctl CLI tool for creating EKS Clusters on AWS
 ```
 curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
 ```
-move eksctl setup to /usr/local/bin directory
+- move eksctl setup to /usr/local/bin directory
 ```
 sudo mv /tmp/eksctl /usr/local/bin
 ```
-To check eksctl version
+- To check eksctl version
 ```
 eksctl version
 ```
@@ -18,11 +18,11 @@ eksctl version
 ```
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
 ```
-Install kubectl:
+- Install kubectl:
 ```
 sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 ```
-Note: If you do not have root access on the target system, you can still install kubectl to the ~/.local/bin directory:
+- Note: If you do not have root access on the target system, you can still install kubectl to the ~/.local/bin directory:
 ```
 chmod +x kubectl
 mkdir -p ~/.local/bin
@@ -33,7 +33,7 @@ kubectl version --client
 ```
 #### 3:Install AWS CLI on Ubuntu
 
-Download the aws cli bundle using below command
+- Download the aws cli bundle using below command
 ```
 sudo apt install unzip -y
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
@@ -42,7 +42,7 @@ sudo ./aws/install
 ```
 #### 4:Configure AWS CLI
 
-To connect AWS using CLI we have configure AWS user using below command
+- To connect AWS using CLI we have configure AWS user using below command
 ```
 aws configure
 ```
