@@ -6,8 +6,8 @@ Kubernetes (often abbreviated as K8s) is an open-source platform designed to aut
 
 ### Cluster Architecture
 ![image](https://github.com/user-attachments/assets/b0b87441-b860-4523-a0b0-ba536f875541)
-## 1. Kubernetes Cluster Components
-A Kubernetes cluster is made up of two main types of components:
+### 1. Kubernetes Cluster Components
+**A Kubernetes cluster is made up of two main types of components:**
 
 - Control Plane (also called the Master Node): Responsible for managing the cluster and making global decisions about the cluster (e.g., scheduling, scaling).
 - Worker Nodes (also called Node): Responsible for running the actual applications (containers) and handling the workload defined by the control plane.
@@ -85,3 +85,99 @@ Kubernetes organizes the workloads in the cluster using objects. Objects represe
    - Secrets are similar to ConfigMaps, but they are designed for sensitive data (e.g., passwords, tokens).
 - #### Namespace:
    - Namespaces are a way to partition resources in a Kubernetes cluster. They provide a scope for names and allow multiple users or teams to share a cluster while maintaining isolation.
+## Services of Kubernetes
+**1. ClusterIP (Default)**
+- Purpose: Exposes the service on a cluster-internal IP. Only accessible from within the cluster.
+- Use case: Internal communication between Pods.
+- Example:
+```
+#yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-service
+spec:
+  selector:
+    app: my-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+  type: ClusterIP
+```
+- Access: Accessible only from within the Kubernetes cluster.
+**2. NodePort**
+- Purpose: Exposes the service on each Node’s IP at a static port (NodePort). You can access the service externally by requesting NodeIP:NodePort.
+- Use case: When you need to expose services to external users or to access them from outside the Kubernetes cluster.
+- Example:
+```
+#yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-service
+spec:
+  selector:
+    app: my-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+      nodePort: 30007
+  type: NodePort
+```
+- Access: You can access the service using any node's IP address and the assigned NodePort.
+**3. LoadBalancer**
+- Purpose: Exposes the service externally via a cloud provider’s load balancer (e.g., AWS ELB, Google Cloud Load Balancer).
+- Use case: For production services requiring external access with automatic load balancing.
+- Example:
+```
+#yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-service
+spec:
+  selector:
+    app: my-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+  type: LoadBalancer
+```
+- Access: The cloud provider provisions an external load balancer that routes traffic to the service. This provides a stable IP address to the external world.
+**4. ExternalName**
+- Purpose: Maps the service to an external DNS name, allowing Kubernetes Pods to access services outside the cluster via DNS.
+- Use case: For integrating external services with the Kubernetes cluster.
+- Example:
+```
+#yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-service
+spec:
+  type: ExternalName
+  externalName: my.external.domain.com
+```
+- Access: DNS resolution within the cluster maps the service to an external DNS name (e.g., my.external.domain.com).
+**5. Headless Service**
+- Purpose: A special case where no load balancing or proxying occurs, and clients connect directly to Pods using DNS records.
+- Use case: Often used for StatefulSets or scenarios where clients need to connect directly to individual Pods.
+- Example:
+```
+#yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-service
+spec:
+  selector:
+    app: my-app
+  ports:
+    - port: 80
+      targetPort: 8080
+  clusterIP: None
+```
+- Access: Each Pod is exposed with a unique DNS entry (e.g., pod-name.my-service.default.svc.cluster.local).
