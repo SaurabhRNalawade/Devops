@@ -163,22 +163,3 @@ spec:
   externalName: my.external.domain.com
 ```
 - Access: DNS resolution within the cluster maps the service to an external DNS name (e.g., my.external.domain.com).
-
-**5.Headless Service**
-- Purpose: A special case where no load balancing or proxying occurs, and clients connect directly to Pods using DNS records.
-- Use case: Often used for StatefulSets or scenarios where clients need to connect directly to individual Pods.
-- Example:
-```
-apiVersion: v1
-kind: Service
-metadata:
-  name: my-service
-spec:
-  selector:
-    app: my-app
-  ports:
-    - port: 80
-      targetPort: 8080
-  clusterIP: None
-```
-- Access: Each Pod is exposed with a unique DNS entry (e.g., pod-name.my-service.default.svc.cluster.local).
