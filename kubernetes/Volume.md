@@ -109,6 +109,7 @@ data:
 ### Secrets:
 - Secret volumes store sensitive information (e.g., passwords, API tokens), and Kubernetes ensures that access to these secrets is secure.
 - Secrets are used to keep confidential data separate from app code.
+
 **To encrypt password**
 ````
 echo -n 'passws123' | base64
